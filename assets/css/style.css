@@ -1,0 +1,45 @@
+body>.container{
+    background-color: #ffc0cb;
+}
+
+[class*="col-"]{
+    text-align: center;
+    vertical-align: center;
+    line-height: 150px;
+    border: 1px solid black;
+}
+
+.col-1::after{
+    content: " 1 col";
+}
+
+.col-2::after{
+    content: " 2 col";
+}
+
+.col-6:not(footer>.col-6):after{
+    content: " 6 col";
+}
+
+.col-8::after{
+    content: " 8 col";
+}
+
+.col-12::after{
+    content: " 12 col";
+}
+
+/* footer */
+footer > .col-6{
+    padding: 5px;
+}
+
+footer > .col-6 [class*="col-"]{
+    background-color: #f07f80;
+    border: 1px solid white;
+}
+
+footer [class*="col-"]:not(footer >.col-6 )::before{
+    content: "Nested ";
+    display: inline-block
+}
