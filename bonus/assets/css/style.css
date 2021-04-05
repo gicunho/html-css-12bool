@@ -1,0 +1,36 @@
+main div{
+    height: 100px;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+.brown{
+    background-color: #974807;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.black{
+    background-color: black;
+}
+
+.skin{
+    background-color: #fac090;
+}
+
+header{
+    margin: 100px 0;
+    text-align: center;
+}
+
+header img{
+    height: 120px
+}
